@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator using javascript basic</title>
+	<style type="text/css">
+		.calculator{margin: auto;width: 300px;padding-top: 100px;display: flex;flex-wrap: wrap;}
+		input {flex-basis: 100%;max-width: 100%;margin-bottom: 5px;padding: 15px 10px;background: #333;color: #fff;}
+		button {flex-basis: 100%;max-width: 20%;padding: 10px;background: #333;color: #fff;font-size: 15px;font-weight: 600;font-family: poppins;}
+		.equal{
+		    max-width: 100%;
+		}
+		.clear {
+			background: #F44336;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="calculator">
+		<input type="text" id="display" disabled>
+		<br>
+		<button onclick="one()">1</button>
+		<button onclick="two()">2</button>
+		<button onclick="three()">3</button>
+		<button onclick="four()">4</button>
+		<button onclick="five()">5</button>
+		<button onclick="six()">6</button>
+		<button onclick="seven()">7</button>
+		<button onclick="eight()">8</button>
+		<button onclick="nine()">9</button>
+		<button onclick="zero()">0</button>
+		<button onclick="plus()">+</button>
+		<button onclick="minus()">-</button>
+		<button onclick="devided()">/</button>
+		<button onclick="multiply()">*</button>
+		<button onclick="clr()" class="clear">C</button>
+		<button onclick="equal()" class="equal">=</button>
+	</div>	
+
+
+
+	<script type="text/javascript">
+
+		Display = document.getElementById ("display")
+
+		function one(){
+			Display.value += 1;
+		}
+		function two(){
+			Display.value += 2;
+		}
+		function three(){
+			Display.value += 3;
+		}
+		function four(){
+			Display.value += 4;
+		}
+		function five(){
+			Display.value += 5;
+		}
+		function six(){
+			Display.value += 6;
+		}
+		function seven(){
+			Display.value += 7;
+		}
+		function eight(){
+			Display.value += 8;
+		}
+		function nine(){
+			Display.value += 9;
+		}
+		function zero(){
+			Display.value += 0;
+		}
+		function plus(){
+			Display.value += "+";
+		}
+		function minus(){
+			Display.value += "-";
+		}
+		function multiply(){
+			Display.value += "*";
+		}
+		function devided(){
+			Display.value += "/";
+		}
+		function equal(){
+			var calculate = eval(Display.value);
+			Display.value = calculate;
+		}
+		function clr(){
+			
+			Display.value = " ";
+		}
+
+
+
+
+
+
+
+		// ******** JS BASICS *********
+
+		
+		var a = 1; // variable declare 
+		document.write(a); //printing in page
+		console.log(1); //printing in console
+		
+
+		var name = "aditi jahan" ; // string variaable declare 
+		var age = 21 ; // variaable declare 
+		var mobile = "01234567891" ; // variaable declare 
+		var address = "agrabad, Ctg 4100" ; // string variable declare 
+
+		console.log("name: "+name+" "+"age: "+age+" "+"address: "+address); //printing in console
+
+
+
+
+		//value swapping
+		var temp = a ;
+		a = age ;
+		age = temp;
+		console.log(a, age);
+		//value swapping
+
+
+
+		//type casting
+		console.log(typeof name);
+		console.log(typeof age);
+		console.log(typeof mobile);
+		//type casting
+
+
+
+
+		//concetanation
+		console.log(a+age);
+
+		var a = "1";
+
+		console.log(a+age);
+		console.log(a,age);
+		//concetanation
+
+
+
+
+
+		//function
+
+		function details() {
+
+			var name = "aditi jahan" ; // string variaable declare 
+			var age = 21 ; // variaable declare 
+			var mobile = "01234567891" ; // variaable declare 
+			var address = "agrabad, Ctg 4100" ; // string variable declare 
+
+			console.log(name+" "+age+" "+address); //printing in console
+			} 
+			details();
+
+		//function
+
+
+		//function with parameter
+
+		function YourDetails(YourName,YourAge) {
+
+			var name = YourName;
+			var age = YourAge
+			 
+
+			console.log(name+" "+age)
+			} 
+			YourDetails("Xahid",25);
+
+		//function with parameter
+
+
+
+
+		//call-back function
+
+		function abc(){
+			console.log (50);
+		} 
+
+		function b(){
+			abc()
+		}
+		b()
+
+		//call-back function
+
+
+
+
+
+		var arr = ["abdul", "karim", "rahim", 44]; //array declare
+		console.log(arr);
+
+		arr.push("anika");//push-method adding a item in last array
+		console.log(arr);
+
+		arr.pop(); //pop-method for deleting last array items
+		console.log(arr);
+
+		console.log(arr.length); // checking array length
+
+		// ******** JS BASICS *********
+
+	</script>
+
+</body>
+</html>
